@@ -1,8 +1,10 @@
 from fastapi import FastAPI
-from app.routers import user
+from typing import List, Dict
+from app.routers import producto
+from app.routers import order
 import uvicorn
 
-
 app = FastAPI()
-app.include_router(user.router)
 
+app.include_router(producto.router)
+app.include_router(order.router)

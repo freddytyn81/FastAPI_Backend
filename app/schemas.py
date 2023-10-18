@@ -1,12 +1,18 @@
 from pydantic import BaseModel
-from typing import Optional
-from datetime import datetime
+from typing import List, Any
 
 
-class User(BaseModel):
-    id:int
-    nombre:str
-    apellido:str
-    telefono:int
-    direccion:Optional[str]
-    creacion_user: datetime = datetime.now()
+class Product(BaseModel):
+    id: int
+    item: str
+    quantity: int
+    price: float
+    status: str
+
+
+class Order(BaseModel):
+    id: int
+    item: str
+    quantity: int
+    price: float
+    status: str

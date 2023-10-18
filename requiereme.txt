@@ -2,4 +2,7 @@ fastapi
 uvicorn
 pydantic
 typing
-datetime
+List
+Dict
+Any
+BaseModel
