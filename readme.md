@@ -1,1 +1,1 @@
-Ejercicio de FastAPI Backend
+Punto final que acepta una solicitud POST.
