@@ -7,3 +7,8 @@ app = FastAPI()
 
 app.include_router(producto.router)
 
+
+@app.get('/')
+def home():
+    return {"Fonoma": "Prueba para Desarrolladores Backend"}
+

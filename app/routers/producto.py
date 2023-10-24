@@ -56,4 +56,3 @@ def Actualizar_producto(product_id: int, updateProduct: Product):
             products[index]["status"] = updateProduct.dict()["status"]
             return {"respuesta": "Producto Actualizado Correctamente"}
     return {"respuesta": "Producto no encontrado"}
-

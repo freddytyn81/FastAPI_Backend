@@ -8,4 +8,11 @@ class Product(BaseModel):
     quantity: int
     price: float
     status: str
+    
+class Order(BaseModel):
+    id: int
+    item: str
+    quantity: int
+    price: float
+    status: str
 
